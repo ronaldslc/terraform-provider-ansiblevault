@@ -3,7 +3,7 @@ terraform {
 
   required_providers {
     ansiblevault = {
-      source  = "MeilleursAgents/ansiblevault"
+      source  = "ronaldslc/ansiblevault"
       version = "~> 2.0"
     }
   }

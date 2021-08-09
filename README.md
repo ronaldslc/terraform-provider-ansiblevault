@@ -1,27 +1,26 @@
 # terraform-provider-ansiblevault
 
-[![Build Status](https://travis-ci.org/MeilleursAgents/terraform-provider-ansiblevault.svg?branch=master)](https://travis-ci.org/MeilleursAgents/terraform-provider-ansiblevault)
-[![codecov](https://codecov.io/gh/MeilleursAgents/terraform-provider-ansiblevault/branch/master/graph/badge.svg)](https://codecov.io/gh/MeilleursAgents/terraform-provider-ansiblevault)
-[![Go Report Card](https://goreportcard.com/badge/github.com/MeilleursAgents/terraform-provider-ansiblevault)](https://goreportcard.com/report/github.com/MeilleursAgents/terraform-provider-ansiblevault)
-
 This Terraform provider allows you to access secrets from an Ansible Vault from Terraform.
 
-Made with ❤️ by [MeilleursAgents](https://www.meilleursagents.com)
+Made with ❤️ by [MeilleursAgents](https://www.meilleursagents.com) & Ronald Chan
+
+## Fork Information
+
+This fork is based off MeilleursAgents' [terraform-provider-ansiblevault](https://github.com/MeilleursAgents/terraform-provider-ansiblevault) and has added functionalities:
+- Mark all data outputs sensistive
+- Mark ansible vault pass value sensitive
 
 ## Thanks
 
-Thanks to [ansible-vault-go](https://github.com/sosedoff/ansible-vault-go) repository for having done the hardest part.
+Thanks to MeilleursAgents and [ansible-vault-go](https://github.com/sosedoff/ansible-vault-go) repository for having done the hardest part
 
 ## Installation
-### Terraform 0.13
-This provider is available in [terraform registry](https://registry.terraform.io/providers/MeilleursAgents/ansiblevault/latest).
+### Terraform 0.15+
 
-For local development follow https://www.terraform.io/docs/commands/cli-config.html#implied-local-mirror-directories
-
-### Terrform 0.12
-```bash
-curl https://raw.githubusercontent.com/MeilleursAgents/terraform-provider-ansiblevault/master/install.sh | bash
-```
+1. Clone this repository
+2. `make build`
+3. `chmod +x bin/terraform-provider*`
+4. Update ~/.terraformrc and add `dev_overrides`
 
 ## Usage
 

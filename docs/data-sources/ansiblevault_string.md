@@ -4,7 +4,7 @@ Use `ansiblevault_string` data source to read in `encrypted` raw data give the s
 
 ## Example Usage
 
-See [examples](https://github.com/MeilleursAgents/terraform-provider-ansiblevault/tree/master/examples) directory
+See [examples](https://github.com/ronaldslc/terraform-provider-ansiblevault/tree/master/examples) directory
 
 ## Argument Reference
 

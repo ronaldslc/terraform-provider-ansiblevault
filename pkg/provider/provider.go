@@ -11,8 +11,8 @@ package provider
 */
 
 import (
-	"github.com/MeilleursAgents/terraform-provider-ansiblevault/v2/pkg/vault"
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/ronaldslc/terraform-provider-ansiblevault/v2/pkg/vault"
 )
 
 // Provider create and returns a terraform.ResourceProvider.
@@ -30,6 +30,7 @@ func Provider() *schema.Provider {
 				Description: "Ansible vault pass value",
 				Optional:    true,
 				DefaultFunc: schema.EnvDefaultFunc("ANSIBLE_VAULT_PASS", nil),
+				Sensitive:   true,
 			},
 			"root_folder": {
 				Type:        schema.TypeString,

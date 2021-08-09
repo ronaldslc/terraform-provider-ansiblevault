@@ -4,7 +4,7 @@ Use `ansiblevault_env` data source to read in `group_vars/tag_<env>/vault.yml` f
 
 ## Example Usage
 
-See [examples](https://github.com/MeilleursAgents/terraform-provider-ansiblevault/tree/master/examples) directory
+See [examples](https://github.com/ronaldslc/terraform-provider-ansiblevault/tree/master/examples) directory
 
 ## Argument Reference
 

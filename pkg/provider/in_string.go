@@ -3,8 +3,8 @@ package provider
 import (
 	"time"
 
-	"github.com/MeilleursAgents/terraform-provider-ansiblevault/v2/pkg/vault"
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/ronaldslc/terraform-provider-ansiblevault/v2/pkg/vault"
 )
 
 func inStringResource() *schema.Resource {
@@ -25,6 +25,7 @@ func inStringResource() *schema.Resource {
 				Computed:    true,
 				Description: "Vault value found",
 				Type:        schema.TypeString,
+				Sensitive:   true,
 			},
 		},
 	}

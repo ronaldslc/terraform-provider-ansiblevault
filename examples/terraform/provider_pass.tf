@@ -3,7 +3,7 @@ variable "vault_pass" {
   default = "secret"
 }
 
-#  See https://github.com/MeilleursAgents/terraform-provider-ansiblevault/blob/master/README.md for installation and usage
+#  See https://github.com/ronaldslc/terraform-provider-ansiblevault/blob/master/README.md for installation and usage
 provider "ansiblevault" {
   vault_pass  = var.vault_pass
   root_folder = "../ansible"

@@ -4,7 +4,7 @@ The Ansible vault Terraform Provider is used to read data formatted as yaml and 
 
 ## Example Usage
 
-See [examples](https://github.com/MeilleursAgents/terraform-provider-ansiblevault/tree/master/examples) directory
+See [examples](https://github.com/ronaldslc/terraform-provider-ansiblevault/tree/master/examples) directory
 
 #### Argument Reference
 
