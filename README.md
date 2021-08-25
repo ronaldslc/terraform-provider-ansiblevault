@@ -9,6 +9,7 @@ Made with ❤️ by [MeilleursAgents](https://www.meilleursagents.com) & Ronald 
 This fork is based off MeilleursAgents' [terraform-provider-ansiblevault](https://github.com/MeilleursAgents/terraform-provider-ansiblevault) and has added functionalities:
 - Mark all data outputs sensistive
 - Mark ansible vault pass value sensitive
+- Removal of trim from ansible vault values
 
 ## Thanks
 

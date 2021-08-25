@@ -76,7 +76,7 @@ func (a App) getVaultKey(filename string, key string, getVaultContent func(strin
 
 	// trim of carriage return for easier use
 	if len(strings.TrimSpace(key)) == 0 {
-		return strings.Trim(rawVault, "\n"), nil
+		return rawVault, nil
 	}
 
 	var vaultContent = make(map[interface{}]interface{})
@@ -90,7 +90,7 @@ func (a App) getVaultKey(filename string, key string, getVaultContent func(strin
 		case map[interface{}]interface{}:
 			vaultContent = v
 		case string:
-			return strings.Trim(v, "\n"), nil
+			return v, nil
 		case int:
 			return strconv.Itoa(v), nil
 		case bool:
