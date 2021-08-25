@@ -132,7 +132,7 @@ func TestGetVaultKey(t *testing.T) {
 			path.Join(ansibleFolder, "simple_vault_test.yaml"),
 			"",
 			ansible_vault.DecryptFile,
-			"API_KEY: NOT_IN_CLEAR_TEXT",
+			"API_KEY: NOT_IN_CLEAR_TEXT\n",
 			nil,
 		},
 		{
@@ -162,7 +162,7 @@ func TestGetVaultKey(t *testing.T) {
 			path.Join(ansibleFolder, "complex_vault_test.yaml"),
 			"MULTILINE_token",
 			ansible_vault.DecryptFile,
-			"foo\nbar",
+			"foo\nbar\n",
 			nil,
 		},
 		{

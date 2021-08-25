@@ -46,7 +46,7 @@ func TestInStringRead(t *testing.T) {
 			"not provided key",
 			vaultRawString,
 			"",
-			"PROD_KEEP_IT_SECRET",
+			"PROD_KEEP_IT_SECRET\n",
 			nil,
 		},
 	}
